@@ -268,4 +268,4 @@ let _ = Js.Float.fromString "100a"
 *)
 external fromString : string -> float = "Number" [@@bs.val]
 
-
+external toInt : float -> int = "%intoffloat"

@@ -77,15 +77,21 @@ eq("File \"bs_float_test.ml\", line 36, characters 5-12", String(-1.0), "-1");
 
 eq("File \"bs_float_test.ml\", line 37, characters 5-12", String(-1.5), "-1.5");
 
-eq("File \"bs_float_test.ml\", line 41, characters 5-12", 2.0 + 3.0, 5.0);
+eq("File \"bs_float_test.ml\", line 40, characters 5-12", 1, 1);
 
-eq("File \"bs_float_test.ml\", line 42, characters 5-12", 2.0 - 3.0, -1.0);
+eq("File \"bs_float_test.ml\", line 41, characters 5-12", -1, -1);
 
-eq("File \"bs_float_test.ml\", line 43, characters 5-12", 2.0 * 3.0, 6.0);
+eq("File \"bs_float_test.ml\", line 42, characters 5-12", -1, -1);
 
-eq("File \"bs_float_test.ml\", line 44, characters 5-12", 3.0 / 2.0, 1.5);
+eq("File \"bs_float_test.ml\", line 46, characters 5-12", 2.0 + 3.0, 5.0);
 
-Mt.from_pair_suites("File \"bs_float_test.ml\", line 46, characters 23-30", suites.contents);
+eq("File \"bs_float_test.ml\", line 47, characters 5-12", 2.0 - 3.0, -1.0);
+
+eq("File \"bs_float_test.ml\", line 48, characters 5-12", 2.0 * 3.0, 6.0);
+
+eq("File \"bs_float_test.ml\", line 49, characters 5-12", 3.0 / 2.0, 1.5);
+
+Mt.from_pair_suites("File \"bs_float_test.ml\", line 51, characters 23-30", suites.contents);
 
 var F = /* alias */0;
 
